@@ -166,6 +166,10 @@ footer{background:#08080a;border-top:1px solid var(--ink-line);padding:66px 0 32
 @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .reveal{opacity:1;transform:none;transition:none} *{animation:none!important} }
 @media (max-width:760px){
 label{font-size:12px!important}
+.legal p,.legal li,.legal dd,.legal dt{font-size:15px!important;line-height:1.7}
+.foot p,.foot a,.foot .desc{color:#a8a294!important;font-size:15px}
+.copy,.copy a{color:#9a9488!important;font-size:13px;line-height:1.7}
+.copy{justify-content:center;text-align:center}
 .drawer .btn{font-family:var(--sans);font-size:13px;letter-spacing:.18em;padding:16px 30px;align-self:center;text-align:center;margin-top:22px}
 .k{font-size:11px!important}
 .eyebrow{font-size:11.5px!important}
@@ -173,8 +177,9 @@ label{font-size:12px!important}
 .logo .sub .txt{font-size:10px}
 .menu-toggle{padding:13px 9px}
 input,select,textarea{font-size:16px!important}
-input[type=checkbox]{width:22px;height:22px;flex:none}
-.consent{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+input[type=checkbox]{width:22px;height:22px}
+.consent{display:block;position:relative;padding-left:38px;line-height:1.55;color:#b5afa2;font-size:14px!important}
+.consent input{position:absolute;left:0;top:0;margin:0}
 .consent a{padding:6px 0;display:inline-block}
 .btn,button[type=submit]{min-height:48px}
 footer a{display:inline-block;padding:7px 0}
