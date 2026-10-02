@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Steccocase</title>
+<meta name="description" content="Informativa sul trattamento dei dati personali di Steccocase, ai sensi del Regolamento UE 2016/679 (GDPR).">
+<meta name="theme-color" content="#0c0c0e">
+<link rel="canonical" href="https://steccocase.it/privacy.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/logo-originale.jpg">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{
+  --ink:#0c0c0e; --ink2:#141418; --ink3:#1c1c22; --ink-line:#26262d;
+  --marble:#f3eee4; --gold:#c6a052; --gold-soft:#dcc487; --gold-deep:#a07d2a;
+  --txt:#eae6dd; --muted:#a39e93; --muted2:#8b867b;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1); --wrap:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--txt);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.eyebrow{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);font-weight:400}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:13px 24px;border:1px solid var(--gold);color:var(--gold-soft);border-radius:1px;transition:.3s var(--ease)}
+.btn:hover{background:var(--gold);color:#221803}
+.logo{display:inline-flex;flex-direction:column;align-items:center;line-height:1}
+.logo .roof{display:block;margin:0 auto 6px}
+.logo .name{font-family:var(--serif);font-weight:600;letter-spacing:.26em;color:var(--marble);font-size:23px;padding-left:.26em}
+.logo .sub{display:flex;align-items:center;justify-content:center;gap:11px;margin-top:6px}
+.logo .sub .line{width:26px;height:1px;background:var(--gold)}
+.logo .sub .txt{font-size:9px;letter-spacing:.5em;color:var(--gold);padding-left:.5em}
+header{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(12,12,14,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--ink-line)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+nav.main ul{display:flex;gap:34px;list-style:none;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#c7c2b7}
+nav.main a:hover{color:var(--gold-soft)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.menu-toggle span{width:26px;height:1.5px;background:var(--marble)}
+.drawer{position:fixed;inset:0;z-index:55;background:rgba(10,10,12,.97);backdrop-filter:blur(6px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;visibility:hidden;transition:.4s var(--ease)}
+.drawer.open{opacity:1;visibility:visible}
+.drawer a{font-family:var(--serif);font-size:30px;color:#e6e0d4;padding:10px 0}
+.legal{max-width:840px;margin:0 auto;padding:140px 0 30px}
+.legal h1{font-size:clamp(34px,5vw,52px);color:#f4efe6;margin:14px 0 0}
+.legal .upd{color:var(--muted2);font-size:13px;letter-spacing:.04em;margin-top:14px}
+.legal h2{font-size:24px;color:#f2ede3;margin:38px 0 12px;display:flex;align-items:center;gap:14px}
+.legal h2:before{content:"";width:28px;height:1px;background:var(--gold-deep)}
+.legal p{color:var(--muted);font-size:16px;margin:10px 0}
+.legal ul{color:var(--muted);font-size:16px;margin:10px 0 10px 4px;padding-left:20px}
+.legal li{margin:6px 0}
+.legal a{color:var(--gold-soft)}
+.legal a:hover{text-decoration:underline}
+.legal .ph{color:var(--gold-soft);font-weight:400}
+.legal .box{border:1px solid var(--ink-line);background:var(--ink2);border-radius:2px;padding:18px 20px;margin:14px 0}
+.legal .disclaimer{border:1px solid var(--gold-deep);background:rgba(198,160,82,.06);color:var(--gold-soft);font-size:13.5px;border-radius:2px;padding:16px 18px;margin:30px 0}
+footer{background:#08080a;border-top:1px solid var(--ink-line);padding:56px 0 30px;margin-top:70px}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+.foot .logo{align-items:flex-start}.foot .logo .sub{justify-content:flex-start}
+.foot h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#e4dfd4;margin-bottom:16px;font-weight:400}
+.foot p,.foot a{color:var(--muted2);font-size:14px;line-height:2.1}
+.foot a:hover{color:var(--gold-soft)}
+.foot .desc{color:var(--muted2);font-size:14px;margin-top:18px;line-height:1.8}
+.copy{border-top:1px solid #17171b;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#57534a;font-size:12px}
+.copy a:hover{color:var(--gold-soft)}
+@media(max-width:760px){ .wrap{padding:0 20px} nav.main,.header-cta{display:none} .menu-toggle{display:flex} .foot{grid-template-columns:1fr} .copy{flex-direction:column;text-align:center;align-items:center} }
+@media (max-width:760px){
+.menu-toggle{padding:13px 9px}
+input,select,textarea{font-size:16px!important}
+input[type=checkbox]{width:22px;height:22px;flex:none}
+.consent{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.consent a{padding:6px 0;display:inline-block}
+.btn,button[type=submit]{min-height:48px}
+footer a{display:inline-block;padding:7px 0}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a href="index.html" class="logo" aria-label="Steccocase — home">
+      <svg class="roof" width="56" height="16" viewBox="0 0 56 16" aria-hidden="true"><path d="M2 14 L28 2 L54 14" fill="none" stroke="#c6a052" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span class="name">STECCO</span>
+      <span class="sub"><span class="line"></span><span class="txt">CASE</span><span class="line"></span></span>
+    </a>
+    <nav class="main" aria-label="Principale">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#agenzia">Chi siamo</a></li>
+        <li><a href="index.html#servizi">Servizi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <a href="valutazione.html" class="btn header-cta">Valutazione gratuita</a>
+    <button class="menu-toggle" id="burger" aria-label="Apri menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="index.html#agenzia">Chi siamo</a>
+  <a href="index.html#servizi">Servizi</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="valutazione.html" class="btn">Valutazione gratuita</a>
+</div>
+
+<main class="wrap">
+  <section class="legal">
+    <span class="eyebrow">Informativa</span>
+    <h1>Privacy Policy</h1>
+    <p class="upd">Ai sensi degli artt. 13-14 del Regolamento UE 2016/679 (GDPR). Ultimo aggiornamento: [inserire data].</p>
+
+    <div class="disclaimer">Questo testo è un <strong>modello di base</strong> predisposto per il sito: prima della pubblicazione va completato con i dati reali e <strong>verificato da un professionista</strong> (consulente/commercialista). Non costituisce consulenza legale.</div>
+
+    <h2>Titolare del trattamento</h2>
+    <div class="box">
+      <p><span class="ph">Steccocase — Stefano Stecco</span><br>
+      Indirizzo: <span class="ph">[via, CAP, Novara (NO)]</span><br>
+      P.IVA: <span class="ph">[__________]</span><br>
+      Email: <a href="mailto:info@steccocase.it">info@steccocase.it</a> · Tel: <span class="ph">[+39 ______]</span></p>
+    </div>
+    <p>I dati identificativi completi (Registro Imprese, n. REA, iscrizione alla sezione agenti d'affari in mediazione) sono riportati nelle <a href="note-legali.html">Note legali</a>. Non è stato nominato un Responsabile della protezione dei dati (DPO), non ricorrendone i presupposti di legge.</p>
+
+    <h2>Quali dati raccogliamo</h2>
+    <p>Raccogliamo solo i dati che ci fornisci volontariamente compilando i moduli del sito (valutazione gratuita, contatti, richiesta informazioni su un immobile):</p>
+    <ul>
+      <li>dati di contatto: nome e cognome, email, numero di telefono;</li>
+      <li>contenuto del messaggio e, per la valutazione, i dati dell'immobile (comune, tipologia, superficie, ecc.);</li>
+    </ul>
+    <p>Inoltre, come avviene per qualsiasi sito web, i server del fornitore di hosting registrano automaticamente alcuni <strong>dati tecnici di connessione</strong> (indirizzo IP, data e ora della richiesta, pagina richiesta, tipo di browser). Questi dati non sono usati per identificare gli utenti né per profilarli: servono esclusivamente alla sicurezza e al corretto funzionamento del servizio (base giuridica: legittimo interesse, art. 6.1.f) e sono conservati dal fornitore per un periodo limitato.</p>
+    <p>Il sito <strong>non utilizza cookie di profilazione né strumenti di tracciamento</strong> e non raccoglie dati di navigazione a fini pubblicitari (vedi <a href="cookie.html">Cookie Policy</a>).</p>
+
+    <h2>Finalità e base giuridica</h2>
+    <ul>
+      <li>rispondere alle richieste e fornire valutazioni/informazioni sugli immobili — base giuridica: riscontro a una tua richiesta / misure precontrattuali (art. 6.1.b) e consenso (art. 6.1.a);</li>
+      <li>gestione del rapporto e adempimenti connessi.</li>
+    </ul>
+
+    <h2>Natura del conferimento</h2>
+    <p>Il conferimento dei dati contrassegnati come obbligatori nei moduli è necessario per dare seguito alla richiesta: senza di essi non è possibile ricontattarti. Il conferimento degli altri dati è facoltativo.</p>
+
+    <h2>Conservazione</h2>
+    <p>I dati inviati tramite i moduli sono conservati per il tempo necessario a gestire la richiesta e, in caso di mancato seguito, per un periodo massimo di <span class="ph">[24]</span> mesi. Se dalla richiesta nasce un rapporto contrattuale, i dati sono conservati per la durata del rapporto e per i successivi <strong>10 anni</strong>, in ottemperanza agli obblighi civilistici e fiscali; per gli adempimenti antiriciclaggio previsti per la mediazione immobiliare, i termini di conservazione sono quelli fissati dal D.Lgs. 231/2007.</p>
+
+    <h2>Destinatari e responsabili del trattamento</h2>
+    <p>I dati non sono diffusi né ceduti a terzi per finalità commerciali. Possono essere trattati, per conto del titolare e sulla base di un accordo ai sensi dell'art. 28 GDPR, dai seguenti soggetti:</p>
+    <ul>
+      <li><strong>fornitore di hosting del sito</strong>: <span class="ph">[nome del provider e Paese della sede]</span>;</li>
+      <li><strong>servizio di inoltro dei moduli</strong>: <span class="ph">[nome del servizio, se attivato]</span>;</li>
+      <li><strong>fornitore della casella di posta elettronica</strong>: <span class="ph">[nome del provider]</span>;</li>
+      <li>consulenti e professionisti dell'agenzia, nei limiti dei rispettivi incarichi, e autorità competenti nei casi previsti dalla legge.</li>
+    </ul>
+
+    <h2>Trasferimento dei dati fuori dall'Unione Europea</h2>
+    <p>Alcuni dei fornitori indicati sopra possono avere sede negli Stati Uniti o utilizzare infrastrutture situate fuori dallo Spazio Economico Europeo. In tal caso il trasferimento avviene esclusivamente in presenza di adeguate garanzie ai sensi del Capo V del GDPR: decisione di adeguatezza della Commissione europea (EU&ndash;US Data Privacy Framework) oppure clausole contrattuali tipo. Puoi richiedere copia delle garanzie adottate scrivendo agli indirizzi indicati sopra.</p>
+    <p class="ph">[Se il sito e i moduli sono ospitati esclusivamente presso fornitori con infrastruttura nell'Unione Europea, sostituire questo paragrafo con: &laquo;I dati sono trattati esclusivamente su server situati nell'Unione Europea. Non è previsto alcun trasferimento verso Paesi terzi.&raquo;]</p>
+
+    <h2>I tuoi diritti</h2>
+    <p>Puoi in qualsiasi momento esercitare i diritti previsti dagli artt. 15-22 del GDPR: accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati, nonché revocare il consenso. Per farlo, scrivi a <a href="mailto:info@steccocase.it">info@steccocase.it</a>. Hai inoltre diritto di proporre reclamo al <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
+
+    <h2>Processi decisionali automatizzati</h2>
+    <p>Non sono utilizzati processi decisionali automatizzati né attività di profilazione ai sensi dell'art. 22 del GDPR. La stima di valutazione è elaborata da una persona sulla base dei dati che ci fornisci.</p>
+
+    <h2>Modifiche a questa informativa</h2>
+    <p>L'informativa può essere aggiornata a seguito di modifiche ai servizi utilizzati o alla normativa. La versione vigente è sempre quella pubblicata in questa pagina, con la data di aggiornamento indicata in alto.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <span class="logo"><span class="name" style="font-size:19px">STECCO</span><span class="sub"><span class="txt">CASE</span><span class="line" style="width:36px"></span></span></span>
+      <p class="desc">Agenzia immobiliare<br>Novara e provincia</p>
+    </div>
+    <div><h4>Menu</h4><p><a href="index.html#servizi">Servizi</a><br><a href="index.html#agenzia">Chi siamo</a><br><a href="valutazione.html">Valutazione</a></p></div>
+    <div><h4>Contatti</h4><p><a href="mailto:info@steccocase.it">info@steccocase.it</a><br>Novara (NO)</p></div>
+    <div><h4>Orari</h4><p>Lun&ndash;Ven 9:00&ndash;18:00<br>Sab 9:00&ndash;13:00<br>Domenica chiuso</p></div>
+  </div>
+  <div class="wrap copy">
+    <span>&copy; 2026 Steccocase &middot; P.IVA [DA INSERIRE] &middot; Tutti i diritti riservati</span>
+    <span><a href="note-legali.html">Note legali</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="cookie.html">Cookie</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'), d=document.getElementById('drawer');
+  if(b) b.addEventListener('click',function(){ var o=!d.classList.contains('open'); d.classList.toggle('open',o); b.setAttribute('aria-expanded',o?'true':'false'); });
+  if(d) d.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ d.classList.remove('open'); }); });
+})();
+</script>
+</body>
+</html>
